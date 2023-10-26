@@ -21,9 +21,15 @@ public class MainApp {
 
         scriere(lista);
 
+        for (PerecheNumere p: lista)
+        {
+            System.out.println(p.toString());
+            System.out.println("Fibonacci: "+p.suntConsecutiveInFibonacci()+"\n");
+            System.out.println("Cel mai mic multiplu comun: "+ p.celMicMultipluComun()+"\n");
+            System.out.println("Suma cifrelor egala: "+p.sumaCifrelorEgala()+"\n");
+            System.out.println("Acelasi numar de cifre pare: "+p.numarCifrePareEgale()+"\n");
 
-
-
+        }
     }
 
     public static void scriere(List <PerecheNumere> lista) throws IOException {
@@ -47,7 +53,7 @@ public class MainApp {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
 
+        return null;
     }
 }

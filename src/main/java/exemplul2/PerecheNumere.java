@@ -39,8 +39,7 @@ public class PerecheNumere {
             fib2 = fib1 + fib2;
             fib1 = temp;
         }
-
-        return (fib1 == a && fib2 == b);
+        return (fib1 == b);
     }
 
     public int celMicMultipluComun() {
